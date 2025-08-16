@@ -38,7 +38,7 @@ const SignupModal = ({ onSuccess, onSwitchToSignin }: SignupModalProps) => {
   };
 
   return (
-    <div className="bg-[#EBEBEB] rounded-3xl w-[500px]">
+    <div className="bg-[#EBEBEB] rounded-3xl w-[500px] pt-[2px] animate-fade-lift">
       <div className="bg-white shadow-lg m-2 rounded-3xl p-8 hover:shadow-xl transition-all duration-300">
         <div className="flex flex-col gap-2 items-center mb-8">
           <h1 className="text-2xl font-semibold text-gray-900 mb-2">

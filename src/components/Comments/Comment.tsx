@@ -15,7 +15,7 @@ const Comment = ({
     onUnauthenticatedAction?.();
   };
   return (
-    <div className="bg-[#00000008] rounded-xl p-2 m-4 w-[554px] hover:translate-y-[-3px] transition-all duration-300">
+    <div className="bg-[#00000008] rounded-xl p-2 m-4 w-[554px] hover:translate-y-[-3px] transition-all duration-300 animate-fade-lift">
       <div className=" bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
         <div className="p-2 flex gap-2 ">
           <img
