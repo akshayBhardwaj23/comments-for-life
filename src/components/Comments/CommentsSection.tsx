@@ -1,4 +1,3 @@
-import React from "react";
 import CommentBox from "./CommentBox";
 import CommentsFeed from "./CommentsFeed";
 import { useAuth } from "../../Context/AuthContext";

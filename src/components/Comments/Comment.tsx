@@ -34,10 +34,67 @@ const Comment = ({
           <p className="pb-4 text-sm text-gray-700">{content}</p>
         </div>
       </div>
-      <div className="flex justify-start gap-2 p-2">
-        <button onClick={handleClick}>Like {reactions.likes}</button>
-        <button onClick={handleClick}>Comment {reactions.comments}</button>
-        <button onClick={handleClick}>Share {reactions.shares}</button>
+      <div className="flex justify-start gap-2 p-5">
+        <button
+          onClick={handleClick}
+          className="flex items-center gap-2 text-sm "
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className="size-4 hover:scale-125 transition-all duration-300"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+            />
+          </svg>
+          {reactions.likes}
+        </button>
+        <button
+          onClick={handleClick}
+          className="flex items-center gap-2 text-sm"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className="size-4 hover:scale-125 transition-all duration-300"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M12 4.5v15m7.5-7.5h-15"
+            />
+          </svg>
+          {reactions.comments}
+        </button>
+        <button
+          onClick={handleClick}
+          className="flex items-center gap-2 text-sm"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className="size-4 hover:scale-125 transition-all duration-300"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z"
+            />
+          </svg>
+          {reactions.shares}
+        </button>
       </div>
     </div>
   );
